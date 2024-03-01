@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Black"), local("Roboto black"),
+        url("../fonts/Roboto-Black.woff2") format("woff2"), 
+        url("../fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Bold"), local("Roboto bold")
+        url("../fonts/Roboto-Bold.woff2") format("woff2"), 
+        url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Regular"), local("Roboto Regular")
+        url("../fonts/Roboto-Regular.woff2") format("woff2"), 
+        url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 43.2px;
+    font-weight: 900;
+}
+
+.title_style_font {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.title_style_font-margin {
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 25px 0;
+}
+
+.section__text {
+    font-weight: 400;
+}
+
+.section__text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.section__figcaption {
+    border: 1px solid black;
+    padding: 15px 30px;
+    border-top: 1px solid transparent;
+    font-weight: 400;
+}
+
+.section__figure {
+    margin-bottom: 30px;
+}
+
+.section__image-figure{
+    margin: 0 auto;
+    display: block;
+}
+
+.section__image {
+    margin: 0 auto;
+    display: block;
+}
+
+.section__image:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.block {
+    display: flow-root;
+}
+
+.section__image-float-left {
+    max-width: 560px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.section__image-float-right {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+.block-list {
+    margin: 0 -30px 0 -30px;
+}
+
+.menu {
+    background-color:#F1F1F1;
+    padding: 25px 0 25px 45px;
+    ;
+}
+
+.list__item {
+    color: #02535F;
+}
+
+.list {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.section__image {
+    margin: 0 auto;
+    display: block;
+}
+
+.section__image:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.finish-list {
+    list-style-type:none;
+    margin-bottom: 30px;
+}
+
+.finish-list__item::before {
+    content: " — ";
+}
+
+.footer__block{
+    background-color:#F1F1F1;
+    padding: 25px 0 25px 45px;
+}
