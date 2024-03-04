@@ -23,10 +23,9 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
-    padding: 35px 0 25px 0;
+    max-width: 1200px;
+    padding: 35px 30px 25px 30px;
     margin: 0 auto;
-    
 }
 
 img, svg {
@@ -86,9 +85,9 @@ iframe {
 Чтобы контент не прижимался к краям экрана
   */
 .container {
-    max-width: 1440px;
-    padding-left: 180px;
-    padding-right: 180px;
+    max-width: 1140px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
 }

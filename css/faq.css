@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto-Bold"), local("Roboto bold")
+    src: local("Roboto-Bold"), local("Roboto bold"),
         url("../fonts/Roboto-Bold.woff2") format("woff2"), 
         url("../fonts/Roboto-Bold.woff") format("woff");
     font-weight: 700;
@@ -18,26 +18,29 @@
 
 @font-face {
     font-family: "Roboto";
-    src: local("Roboto-Regular"), local("Roboto Regular")
+    src: local("Roboto-Regular"), local("Roboto Regular"),
         url("../fonts/Roboto-Regular.woff2") format("woff2"), 
         url("../fonts/Roboto-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
 
-.title {
+.header__main-title{
+    max-width: 1080px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 30px;
+}
+
+.section__title {
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 43.2px;
     font-weight: 900;
 }
 
-.title_style_font {
-    font-size: 60px;
-    line-height: 72px;
-}
-
-.title_style_font-margin {
+.menu__title {
     font-size: 44px;
     line-height: 52.8px;
     font-weight: 700;
@@ -48,11 +51,11 @@
     padding: 25px 0;
 }
 
-.section__text {
-    font-weight: 400;
+.section__text:not(:last-child) {
+    margin-bottom: 30px;
 }
 
-.section__text:not(:last-child) {
+.header__text {
     margin-bottom: 30px;
 }
 
@@ -81,7 +84,7 @@
     margin-bottom: 30px;
 }
 
-.block {
+.section__block {
     display: flow-root;
 }
 
@@ -94,27 +97,43 @@
 
 .section__image-float-right {
     float: right;
-    margin-left: 40px;
     margin-bottom: 0;
 }
 
-.block-list {
-    margin: 0 -30px 0 -30px;
+.section__float-text {
+    float: left;
+    width: calc(100% - 600px);
+}
+
+.container_style_big {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .menu {
     background-color:#F1F1F1;
-    padding: 25px 0 25px 45px;
-    ;
+    padding: 25px 30px 25px 45px;
+    border-radius: 10px;
+    width: 100%;
 }
 
-.list__item {
+.menu__item {
     color: #02535F;
 }
 
-.list {
+.menu__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.menu__link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.menu__list {
     padding-left: 0;
     list-style-position: inside;
+    margin: 0;
 }
 
 .section__image {
@@ -126,13 +145,17 @@
     margin-bottom: 30px;
 }
 
-.finish-list {
+.menu__finish-list {
     list-style-type:none;
     margin-bottom: 30px;
 }
 
-.finish-list__item::before {
+.menu__element::before {
     content: " — ";
+}
+
+.menu__element:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .footer__block{
