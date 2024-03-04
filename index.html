@@ -18,29 +18,28 @@
     <body>
         <article class="article">
             <div class="wrapper">
-                <header class="section header">
+                <section class="section header">
                     <div class="container">
                         <h1 class="header__main-title">Отступы в вёрстке: margin и padding</h1>
                         <p class="header__text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
                         <p class="header__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
                     </div>
-                    <nav class="menu">
-                        <h2 class="menu__title">Содержание:</h2>
-                        <ol class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#one">Отступ задается от предыдущего элемента к следующему</a>
+                    <nav class="nav">
+                        <h1 class="nav__title">Содержание:</h1>
+                        <ol class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#one">Отступ задается от предыдущего элемента к следующему</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#two">Отступ задается последнему возможному элементу в DOM-дереве</a>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#two">Отступ задается последнему возможному элементу в DOM-дереве</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#three">Для последнего элемента группы отступ обнуляется</a>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#three">Для последнего элемента группы отступ обнуляется</a>
                             </li>
                         </ol>
                     </nav>
-                </header>
+                </section>
 
-                <main>
                     <section class="section" id="one">
                         <div class="container">
                             <h2 class="section__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
@@ -141,21 +140,20 @@
                                 height="383">
                         </div>
                     </section>
-                </main>
 
-                <footer class="section footer">
-                    <div class="menu">
-                        <h2 class="menu__title">Подытожим:</h2>
-                        <ul class="menu__finish-list">
-                            <li class="menu__element">отступы задаём от предыдущего элемента к следующему</li>
-                            <li class="menu__element">используем только <i>margin-right</i> и <i>margin-bottom</i></li>
-                            <li class="menu__element">внешние отступы задаются только между соседями</li>
-                            <li class="menu__element">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-                            <li class="menu__element">последнему элементу группы отступ всегда обнуляем</li>
+                <section class="section footer">
+                    <div class="nav">
+                        <h2 class="nav__title">Подытожим:</h2>
+                        <ul class="nav__finish-list">
+                            <li class="nav__element">отступы задаём от предыдущего элемента к следующему</li>
+                            <li class="nav__element">используем только <i>margin-right</i> и <i>margin-bottom</i></li>
+                            <li class="nav__element">внешние отступы задаются только между соседями</li>
+                            <li class="nav__element">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+                            <li class="nav__element">последнему элементу группы отступ всегда обнуляем</li>
                         </ul>
                         <p class="section__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
                     </div>
-                </footer>
+                </section>
             </div>
         </article>
     </body>
