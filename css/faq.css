@@ -59,6 +59,11 @@
     margin-bottom: 30px;
 }
 
+.section__text-inline-block {
+    display: inline-block;
+    width: calc(100% - 590px);
+}
+
 .section__figcaption {
     border: 1px solid black;
     padding: 15px 30px;
